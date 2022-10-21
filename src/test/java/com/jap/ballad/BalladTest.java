@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
@@ -23,7 +24,7 @@ ballad = new Ballad();
     }
 
     @Test
-    public void givenCorrectDataFromFileCheckData() throws FileNotFoundException {
+    public void givenCorrectDataFromFileCheckData() throws FileNotFoundException, IOException {
         String balladData = "";
         String balladText = "'Twas the night before Christmas, when all through the house\n" +
                 "Not a creature was stirring, not even a mouse;\n" +
